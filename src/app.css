@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@plugin "@iconify/tailwind4";
+
+.background {
+  @apply flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-400 to-blue-300;
+}
+/* Custom Font Palette */
+@layer utilities {
+  /* Heading 1 */
+  .font-heading {
+    @apply text-4xl font-extrabold text-gray-900 leading-tight;
+  }
+
+  /* Heading 2 */
+  .font-subheading {
+    @apply text-3xl font-semibold text-gray-800 leading-snug;
+  }
+
+  /* Body Text */
+  .font-body {
+    @apply text-base font-normal text-gray-700 leading-relaxed;
+  }
+
+  /* Small Text */
+  .font-small {
+    @apply text-sm font-light text-gray-600 leading-tight;
+  }
+
+  /* Link Text */
+  .font-link {
+    @apply text-blue-600 font-medium underline hover:text-blue-800;
+  }
+
+  /* Button Text */
+  .font-button {
+    @apply text-lg font-bold text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-md;
+  }
+
+  /* Quote Text */
+  .font-quote {
+    @apply italic text-lg text-gray-600 border-l-4 border-gray-300 pl-4;
+  }
+
+  /* Paragraph Text */
+  .font-paragraph {
+    @apply text-lg font-normal text-gray-800 leading-relaxed;
+  }
+
+  /* Strong emphasis (like bold text) */
+  .font-strong {
+    @apply font-bold;
+  }
+
+  /* Muted Text */
+  .font-muted {
+    @apply text-gray-500 font-medium;
+  }
+}
+.box-calc {
+  @apply bg-amber-500 rounded-2xl w-15 h-15;
+}
